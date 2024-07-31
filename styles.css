@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #e8eef3;
+}
+.header {
+  width: 100%;
+  height: 122px;
+  position: fixed;
+}
+.Htop {
+  display: flex;
+  height: 72px;
+  background-color: white;
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+.logoISP {
+  width: 47px;
+  height: 53px;
+}
+.Hbottom {
+  padding: 10px 50px 0px 50px;
+  height: 30px;
+  background-color: #eab732;
+  display: flex;
+  justify-content: space-between;
+}
+.Hbottom p {
+  color:rgb(40, 40, 40);
+}
+
+.ispName {
+  font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  color:rgb(255, 255, 255);
+}
+.btnContainer p {
+  margin-left: 50px;
+  color: rgb(0, 0, 0);
+}
+.btnContainer p:hover {
+  cursor: pointer;
+}
+.Hbottom p:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.mainSection {
+  width: 100%;
+  height: 553px;
+}
+.Sectiontop {
+  width: 100%;
+  height: 358px;
+  background-image: url("images/Rectangle 3.png");
+  background-repeat: none;
+}
+.Sectionbottom {
+  display: flex;
+  width: 100%;
+  height: 173px;
+  background-color: #2d2d2d;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+
+.Labs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+}
+
+.Lab {
+  width: 671px;
+  height: 450px;
+  background-image: url("images/labBack.png");
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin: 20px;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 30px;
+}
+
+.reserva {
+  font-size: 22px;
+  font-weight: 600;
+  color: #eab732;
+  text-decoration: none;
+}
+.reserva:hover {
+  color: #7b6019;
+}
+.footer {
+  width: 100%;
+  height: 236px;
+  background-color: #000;
+}
