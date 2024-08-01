@@ -1,7 +1,6 @@
 * {
   margin: 0;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 body {
   display: flex;
@@ -12,6 +11,7 @@ body {
   width: 100%;
   height: 122px;
   position: fixed;
+  
 }
 .Htop {
   display: flex;
@@ -27,10 +27,14 @@ body {
 }
 .Hbottom {
   padding: 10px 50px 0px 50px;
-  height: 30px;
+  height: 26px;
   background-color: #eab732;
   display: flex;
   justify-content: space-between;
+  -webkit-box-shadow: 0px 4px 6px 0px rgba(128,128,128,0.64);
+-moz-box-shadow: 0px 4px 6px 0px rgba(128,128,128,0.64);
+box-shadow: 0px 4px 6px 0px rgba(128,128,128,0.64);
+  font-size: small;
 }
 .Hbottom p {
   color: rgb(40, 40, 40);
@@ -62,9 +66,10 @@ a{
 .cont{
     display: flex;
     width: 100%;
-    height:1234px ;
+    height:1194px ;
     justify-content: center;
     align-items: center;
+    align-content: space-between;
 
 }
 .container{
@@ -74,20 +79,23 @@ a{
     width: 90%;
     height: 934px;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 5px;
     justify-content: center;
     align-items: center;
+  font-size: small;
 }
 
 
 .table {
   background-color: #D9D9D9;
   border-collapse: collapse; 
+  font-size: smaller;
 }
 
 .table tr th,
 .table tr td {
   border-bottom: 1px solid #e2e2e2;
+  font-size: smaller;
 }
 
 .table tr:last-child td {
@@ -95,12 +103,11 @@ a{
 }
 
 .table tr th {
-  padding: 0rem 0rem 0rem 0rem;
   font-weight: 400;
   color: #757575 ;
 }
 .table tr td {
-  padding: 1rem 2rem 1rem 4rem;
+  padding: 0.3rem 2rem 0.3rem 4rem;
   font-weight: 300;
   font-size: 0.9rem;
   border: solid 1px white;
@@ -109,4 +116,77 @@ a{
 }
 .table tr:nth-child(even){
   background-color: #f4f2f1;
+}
+
+.formCont{
+  width: 71%;
+  height: 355px;
+  background-color: #FDFAFA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #9B9B9B; 
+  border-radius: 5px;
+}
+.formCont form{
+  width: 100%;
+display: flex;
+justify-content: space-around;
+}
+.prof{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: smaller;
+}
+.periodos{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: smaller;
+
+
+}
+table thead tr td {
+
+  font-size: smaller;
+}
+.start{
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: smaller;
+}
+.formCont form input{
+  width: 268px;
+  height: 34px;
+  border-style: none;
+  border: solid 1px rgb(143, 143, 143);
+  border-radius: 4px;
+}
+.formCont form select{
+  width: 268px;
+  height: 34px;
+  border-style: none;
+  border: solid 1px rgb(143, 143, 143);
+  border-radius: 4px;
+  background-color: white;
+}
+.formCont form button{
+  width: 268px;
+  height: 34px;
+  border-style: none;
+  
+  border-radius: 4px;
+  background-color: #EAB732;
+}
+.formCont form button:hover{
+  background-color: #ffdd88;
+}
+.footer {
+  width: 100%;
+  height: 236px;
+  background-color: #000;
 }

@@ -51,7 +51,14 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td>08:15 - 09:45</td><td></td>
+                            <td>08:15 - 09:00</td><td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>09:00 - 09:45</td><td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -96,7 +103,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>07:30 - 08:15</td>
+                            <td>13:00 - 13:55</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -104,28 +111,35 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td>08:15 - 09:45</td><td></td>
+                            <td>13:45 - 14:30</td><td></td>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td>10:00 - 10:45</td><td></td>
+                            <td>14:30 - 15:15</td><td></td>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td>10:45 - 11:30</td><td></td>
+                            <td>15:30 - 16:15</td><td></td>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td>11:30 - 12:15</td><td></td>
+                            <td>16:15 - 17:00</td><td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>17:00 - 17:45</td><td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -134,51 +148,69 @@
                     </tbody>
                 </table>
             </div>
-            <br><br>
+            <br>
             <div class="formCont">
+                <h4>Dados da Reserva</h4> <br>
                 <form action="">
-                    <h4>Dados da Reserva</h4>
-                    <label for="prof">Nome do professor:</label>
-                    <input name='prof'type="text">
-                    <label for="mecanografico">Numero mecanografico:</label>
-                    <input name='mecanografico'type="text">
-                    <label for="periodo">Periodo</label>
-                    <select name="periodo" id="">
-                        <option value="1">Manha</option>
-                        <option value="1">Tarde</option>
-                    </select>
-                    <label for="periodo">Horarios Disponiveis</label>
-                    <select name="periodo" id="">
-                        <option value="1">07:30-08:15</option>
-                        <option value="1">08:15-09:00</option>
-                        <option value="1">09:00-09:45</option>
-                        <option value="1">10:00-10:45</option>
-                        <option value="1">10:45-11:30</option>
-                        <option value="1">11:30-12:15</option>
-                    </select>
-                    <label for="periodo">Hora de inicio</label>
-                    <select name="periodo" id="">
-                        <option value="1">07:30-08:15</option>
-                        <option value="1">08:15-09:00</option>
-                        <option value="1">09:00-09:45</option>
-                        <option value="1">10:00-10:45</option>
-                        <option value="1">10:45-11:30</option>
-                        <option value="1">11:30-12:15</option>
-                    </select>
-                    <label for="periodo">Hora de termino</label>
-                    <select name="periodo" id="">
-                        <option value="1">07:30-08:15</option>
-                        <option value="1">08:15-09:00</option>
-                        <option value="1">09:00-09:45</option>
-                        <option value="1">10:00-10:45</option>
-                        <option value="1">10:45-11:30</option>
-                        <option value="1">11:30-12:15</option>
-                    </select>
-                    <button>Reservar</button>
+                    <div class="prof">
+                        <label for="prof">Nome do professor:</label>
+                        <input name='prof'type="text">
+                        <label for="mecanografico">Numero mecanografico:</label>
+                        <input name='mecanografico'type="text">
+                    </div>
+                    <div class="periodos">
+                        <label for="periodo">Periodo</label>
+                        <select name="periodo" id="">
+                            <option value="1">Manha</option>
+                            <option value="1">Tarde</option>
+                        </select>
+                        <label for="dias">Dias Disponiveis</label>
+                        <select name="dias" id="">
+                            <option value="1">07:30-08:15</option>
+                            <option value="1">08:15-09:00</option>
+                            <option value="1">09:00-09:45</option>
+                            <option value="1">10:00-10:45</option>
+                            <option value="1">10:45-11:30</option>
+                            <option value="1">11:30-12:15</option>
+                        </select>
+                        <label for="horas">Horarios Disponiveis</label>
+                        <select name="horas" id="">
+                            <option value="1">07:30-08:15</option>
+                            <option value="1">08:15-09:00</option>
+                            <option value="1">09:00-09:45</option>
+                            <option value="1">10:00-10:45</option>
+                            <option value="1">10:45-11:30</option>
+                            <option value="1">11:30-12:15</option>
+                        </select>
+                    </div>
+                    <div class="start">
+                        <label for="periodo">Hora de inicio</label>
+                        <select name="periodo" id="">
+                            <option value="1">07:30-08:15</option>
+                            <option value="1">08:15-09:00</option>
+                            <option value="1">09:00-09:45</option>
+                            <option value="1">10:00-10:45</option>
+                            <option value="1">10:45-11:30</option>
+                            <option value="1">11:30-12:15</option>
+                        </select>
+                        <label for="periodo">Hora de termino</label>
+                        <select name="periodo" id="">
+                            <option value="1">07:30-08:15</option>
+                            <option value="1">08:15-09:00</option>
+                            <option value="1">09:00-09:45</option>
+                            <option value="1">10:00-10:45</option>
+                            <option value="1">10:45-11:30</option>
+                            <option value="1">11:30-12:15</option>
+                        </select> <br>
+                        <button>Reservar</button>
+                    </div>
                 </form>
             </div>
         </section>
+       
         </div>
+<footer id="p3" class="footer">
 
+</footer>
 </body>
 </html>
